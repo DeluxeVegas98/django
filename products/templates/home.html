@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" href="favicon.png" sizes="16x16" type="image/png">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>STLIC</title>
+<meta charset="utf-8" />
+<style>
+
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300&subset=latin-ext');
+
+  html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+  }
+  body {
+    background-image: url("https://wallpapercave.com/wp/Y9DnzbT.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    font-size: 40px;
+    font-family: 'work sans';
+    display: flex;
+    flex-direction: column;
+
+  }
+  .pirosvonal {
+    border: 1px solid red;
+  }
+  .kozepe {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
+  .fejlec {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+    font-family:arial;
+  }
+  video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -100;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  .menupont {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .menupont:hover {
+    font-size: 40px;
+  }
+  .gombocska {
+    font-size: 16px;
+    font-family: arial;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 30px;
+    width: 80px;
+    display: inline-block;
+  }
+  .gombocska:hover {
+    background-color: yellow;
+  }
+  @media (max-width: 767px) {
+  }
+  @media (max-height: 450px) {
+  }
+</style>
+</head>
+<body>
+<nav class="fejlec">
+  <a class="menupont" href="magunkrol.htm">Be a Patron!</a>
+  <a class="menupont" href="http://www.disney.com">Contact</a>
+  <a class="menupont" href="http://asdkljasdlkjdas.asdasda/sdfkldsf">Forum</a>
+</nav>
+
+<div class="kozepe">Survive The Life In Chernobyl
+  <div>
+    <a class="gombocska" href="/termekek">About</a>
+    <a class="gombocska" href="products/">Shop</a>
+    <a class="gombocska" href="/fizet">Blog</a>
+  </div>
+</div>
+<footer class="fejlec">&copy; STLIC 2019-<span id="year"></span></footer>
+<script>
+        var d = new Date();
+        var n = d.getFullYear();
+        document.getElementById("year").innerHTML = n;
+</script>
+</body>>
+</html>>
